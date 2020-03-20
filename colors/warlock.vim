@@ -2,7 +2,7 @@
 " Author:      Martin Hardselius (martin.hardselius@gmail.com)
 " Webpage:     https://github.com/hardselius/warlock
 " Description: A grayscale variant of Apprentice by Romain Lafourcade (romainlafourcade@gmail.com)
-" Last Change: 2020-03-04
+" Last Change: 2020-03-20
 
 hi clear
 if exists("syntax_on")
@@ -12,7 +12,7 @@ endif
 let colors_name = "warlock"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=235 ctermfg=250 cterm=NONE guibg=#262626 guifg=#bcbcbc gui=NONE
+    hi Normal ctermbg=234 ctermfg=250 cterm=NONE guibg=#1c1c1c guifg=#bcbcbc gui=NONE
     hi NonText ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi LineNr ctermbg=234 ctermfg=242 cterm=NONE guibg=#1c1c1c guifg=#6c6c6c gui=NONE
